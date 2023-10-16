@@ -1,0 +1,27 @@
+package section1;
+
+import java.util.Scanner;
+
+public class FindString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+
+		String str = in.next();
+		int result = 0;
+		for (int i = 0; i < str.length(); i++) {
+
+			String str2 = str.substring(i, i);
+			
+			if ("c".equals(str2)) {
+				result++;
+			}
+
+		}
+
+		System.out.println(result);
+		return;
+	}
+
+}
